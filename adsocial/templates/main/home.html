@@ -37,7 +37,15 @@
    clear: both;
 }
 
-#onboard-nav-buttons-container a {
+.onboard-nav-button-container {
+   opacity: 0.8;
+}
+
+.onboard-nav-button-container:hover {
+   opacity: 1.0;
+}
+
+.onboard-nav-button-container a {
    text-decoration: none;
 }
 
@@ -101,7 +109,7 @@
         <div class="onboard-nav-left pull-left col-md-6">
             <div id="onboard-register">register as a</div>
             <div id="onboard-nav-buttons">
-                <div id="onboard-nav-buttons-container" class="pull-left">
+                <div class="onboard-nav-button-container pull-left">
                     <a href="#">
                         <div class="onboard-nav-button-inner">
                             <div class="accent"></div>
@@ -112,7 +120,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="onboard-nav-buttons-container" class="pull-right">
+                <div class="onboard-nav-button-container pull-right">
                     <a href="#">
                         <div class="onboard-nav-button-inner">
                             <div class="accent"></div>
