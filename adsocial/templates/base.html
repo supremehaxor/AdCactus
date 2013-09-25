@@ -12,28 +12,8 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="{{ STATIC_URL }}/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        font-family: "Droid Sans";
-        padding-bottom: 40px;
-      }
+    <link href="{{ STATIC_URL }}/css/base.css" rel="stylesheet">
 
-      .header {
-        box-shadow: 0 2px 3px rgba(0,0,0,0.3);
-        -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.3);
-        -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.3);
-      }
-
-      .header-inner {
-        font-family: "Droid Sans";
-        font-size: 18px;
-      }
-
-      .footer {
-        padding-top: 20px;
-      }
-    </style>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
@@ -64,16 +44,16 @@
     <div class="wrapper">
         <div class="header">
             <div class="header-inner container">
-                <a href="#" class="pull-left"><img src="{{ STATIC_URL }}/img/logo.jpg" style="height: 50px;"></a>
-                <a href="#" class="pull-right" style="position: relative; top: 18px; color: black;">Sign in</a>
-                <a href="#" class="pull-right" style="position: relative; top: 18px; right: 20px;">Browse</a>
+                <a href="#" id="logo" class="pull-left"><img src="{{ STATIC_URL }}/img/logo.jpg" ></a>
+                <a href="#" id="signin" class="pull-right header-nav-link">Sign in</a>
+                <a href="#" id="browse" class="pull-right header-nav-link">Browse</a>
             </div>
         </div>
 
        {% block content-wrap %}
        {% endblock %}
 
-        <div class="container">
+        <div class="content">
 
             {% block content %}
             {% endblock %}
