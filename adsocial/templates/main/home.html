@@ -30,7 +30,6 @@
 
 .nav-button-inner .heading-wrapper {
    margin-top: 50px;
-   padding: 50px 10px;
    width: 180px;
    margin: 0 auto;
 }
@@ -41,7 +40,6 @@
 
 .nav-button-inner  .subheading {
    font-size: 24px;
-   padding: 10px 0px 0px 20px;
 }
 
 </style>
@@ -49,23 +47,23 @@
 
 {% block content-wrap %}
 <div class="wide-img">
-    <img src="{{ STATIC_URL }}/img/background.jpg">
+    <img src="{{ STATIC_URL }}/img/blurred-cactus.jpg">
 </div>
 {% endblock %}
 
 {% block content %}
 
-    <div class="main-nav clearfix" style="margin: 0 auto; width: 900px; color: white; position: relative; top: -400px; z-index: 1;">
-        <div class="main-nav-left pull-left" style="width: 430px; padding: 10px;">
+    <div class="main-nav row clearfix" style="margin: 0 auto; color: white; position: relative; top: -400px; z-index: 1;">
+        <div class="main-nav-left pull-left col-md-6">
+            <div style="margin: 0 auto; width: 100px; padding-bottom: 10px; text-align: center; font-size: 18px;">register as a</div>
             <div class="nav-buttons">
-                <div style="margin: 0 auto; width: 100px; padding-bottom: 10px; text-align: center; font-size: 18px;">register as a</div>
                 <div class="nav-button-container pull-left">
                     <a href="#">
                         <div class="nav-button-inner">
                             <div class="accent"></div>
                             <div class="heading-wrapper">
                                 <div class="heading">Publisher</div>
-                                <div class="subheading"><span class="glyphicon glyphicon-arrow-right"></span>Monetize your content</div>
+                                <div class="subheading"><span class="glyphicon glyphicon-arrow-right pull-left" style="color: grey;"></span><span class="pull-right" style="width: 120px;">Monetize your content</span></div>
                             </div>
                         </div>
                     </a>
@@ -76,15 +74,15 @@
                             <div class="accent"></div>
                             <div class="heading-wrapper">
                                 <div class="heading">Advertiser</div>
-                                <div class="subheading"><span class="glyphicon glyphicon-arrow-right"></span>Promote your product</div>
+                                <div class="subheading"><span class="glyphicon glyphicon-arrow-right pull-left" style="color: grey;"></span><span class="pull-right" style="width: 120px;">Promote your product</span></div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div style="margin: 0 auto; width: 100px; padding-bottom: 20px; text-align: center; font-size: 18px;"><a href="#">skip this step</a></div>
             </div>
+            <div style="margin: 0 auto; width: 100px; padding-bottom: 20px; text-align: center; font-size: 18px;"><a href="#">skip this step</a></div>
         </div>
-        <div class="main-nav-right pull-right" style="width: 430px; margin-top: 30px; padding: 10px;">
+        <div class="main-nav-right pull-right col-md-6" style="margin-top: 30px; padding: 10px;">
             <h1 style="margin-left: 20px;">AdCactus connects companies with top influencers on social media sites</h1>
         </div>
     </div>
