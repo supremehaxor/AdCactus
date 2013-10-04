@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+#hank is gay
 def index(request):
     return render(request, 'main/home.html', {'message': 'Welcome to AdSocial'})
 
